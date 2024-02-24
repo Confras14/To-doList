@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.todoList {
+  background: #3a3a3a;
+  width: 30rem;
+  border: #ccc 2px dashed;
+  border-radius: 15px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 2rem;
+}
+
+.newQuest {
+  color: #ccc;
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 500;
+  height: 3rem !important;
+  width: 26rem !important;
+  user-select: none;
+}
+
+.quest {
+  width: 26rem;
+  background: #2f2f2f;
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.quest:hover {
+  background: #202020;
+}
+
+.titleQuest {
+  border: none;
+  outline: none;
+  
+  width:17rem;
+  background: none;
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.titleQuest:focus {
+  border-bottom: #ccc solid 2px;
+}
+
+.checkQuest {
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+}
+
+.btDellQuest {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ccc;
+  font-size: 24px;
+  background: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.btDellQuest:hover {
+  background-color: #ad3535;
+}
