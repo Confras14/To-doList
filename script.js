@@ -4,12 +4,16 @@ function handleCriarQuest() {
 
   todoList.appendChild(quest);
 
-  // Atualiza a lista de quests após adicionar uma nova
-  allQuests = document.querySelectorAll('.quest');
-  allQuests = Array.from(allQuests);
-  allQuests.shift();
-  console.log(allQuests);
-  a();
+  const dellQuest = quest.querySelector('.btDellQuest');
+  if (dellQuest) {
+    dellQuest.addEventListener('click', () => {
+      console.log("Clicou em deletar");
+      // Verifica se o elemento pai ainda existe antes de tentar removê-lo
+      if (quest.parentElement) {
+        quest.parentElement.removeChild(quest);
+      }
+    });
+  }
 }
 
 const todoList = document.querySelector('.todoList');

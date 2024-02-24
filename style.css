@@ -5,28 +5,46 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
-
 }
 
 body {
   background: #222;
   display: flex;
-  justify-content: center;
-  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+}
+
+h1 {
+  color: #eee;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .todoList {
   background: #3a3a3a;
-  width: 30rem;
+  width: 480px;
   border: #ccc 2px dashed;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding-block: 1rem;
 
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-  gap: 2rem;
+  gap: 0rem;
+}
+
+.todoList > * {
+  margin-block: 1rem;
+}
+
+.todoList:first-child {
+  margin-top: 2rem;
+}
+
+.todoList:last-child {
+  margin-bottom: 2rem;
 }
 
 .newQuest {
@@ -44,15 +62,16 @@ body {
   background: #2f2f2f;
   border-radius: 15px;
   padding: 1.5rem;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .quest:hover {
-  background: #202020;
+  background: #0f0f0f;
 }
 
 .titleQuest {
@@ -94,4 +113,26 @@ body {
 
 .btDellQuest:hover {
   background-color: #ad3535;
+}
+
+@media only screen and (max-device-width: 600px) {
+  .todoList { width: 80%; justify-content: center; gap: 16px; }
+  .quest { width: 80% !important }
+  .newQuest :nth-child(2) { display: none; }
+  .newQuest :nth-child(1) { font-size: 32px; }
+  .todoList span {display: flex; justify-content: center;}
+  .todoList span div { width: 80% !important; }
+  .titleQuest { font-size: 16px; width: 1000%;}
+  .btDellQuest { width: 1rem ;height: 1rem; font-size: 16px;}
+  .todoList > * {
+    margin-block: 0.5rem;
+  }
+  
+  .todoList:first-child {
+    margin-top: 1rem;
+  }
+  
+  .todoList:last-child {
+    margin-bottom: 1rem;
+  }
 }
