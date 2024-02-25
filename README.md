@@ -1,7 +1,7 @@
 # To-do List básica
 <!-- ! Colocar badges -->
 
-<div style = 'display: flex; gap: 16px;'>
+<div style='display: flex; gap: 16px;'>
 
   ![Badge HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 

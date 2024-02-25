@@ -19,6 +19,7 @@ h1 {
   color: #eee;
   font-weight: 500;
   margin-bottom: 2rem;
+  font-size: 32px;
 }
 
 .todoList {
@@ -49,16 +50,14 @@ h1 {
 
 .newQuest {
   color: #ccc;
-  color: #ccc;
   font-size: 24px;
   font-weight: 500;
   height: 3rem !important;
-  width: 26rem !important;
   user-select: none;
 }
 
 .quest {
-  width: 26rem;
+  width: 26rem !important;
   background: #2f2f2f;
   border-radius: 15px;
   padding: 1.5rem;
